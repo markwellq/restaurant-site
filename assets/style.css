@@ -1,0 +1,359 @@
+/* Google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* reset css mini */
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Poppins', serif;
+}
+
+a {
+	text-decoration: none;
+	color: inherit; /* перенимает цвет */
+	outline: none;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 600;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		160deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(247, 218, 124, 1) 100%
+	);
+	font-family: 'Poppins', serif;
+}
+
+button {
+	padding: 0.8rem 1.5rem;
+	background-color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+/* CSS BASE */
+
+.container {
+	max-width: 1024px;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+
+.grid {
+	display: grid; /* сетка */
+}
+
+.section {
+	padding: 4.5rem 0 2rem;
+}
+
+/* HEADER */
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* Header */
+.header {
+	background-color: #ffffff;
+	width: 100%;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+/* Навигация */
+.nav {
+	display: grid;
+	grid-template-columns: auto 1fr auto; /* Логотип, центр, кнопка */
+	align-items: center;
+	height: 70px;
+}
+
+.nav__logo {
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: #111;
+	text-decoration: none;
+}
+
+.nav__list {
+	display: flex;
+	justify-content: center; /* Центрирует ссылки */
+	gap: 2rem; /* Промежуток между ссылками */
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav__link {
+	font-size: 1rem;
+	font-weight: 600;
+	color: #111;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+	color: #6c6c6c;
+}
+
+.button__menu {
+	padding: 0.8rem 1.5rem;
+	background-color: #000000;
+	border: none;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.button__menu:hover {
+	background-color: #535353;
+}
+
+/* Home */
+
+.home__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.home__title {
+	font-size: 4rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.home__description {
+	font-size: 1.3rem;
+	margin-bottom: 1rem;
+}
+
+.home__img {
+	margin-left: 20px;
+}
+
+.home__button:hover {
+	background-color: #e6e6e6;
+}
+
+/* Food */
+
+.food__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	margin-bottom: 5rem;
+}
+
+.food__cards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
+	gap: 20px;
+	justify-items: center;
+	width: 100%;
+	margin-top: 3rem;
+}
+
+.food__card {
+	background-color: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: 350px;
+	text-align: center;
+	transition: transform 0.3s ease-in-out;
+}
+
+.food__card:hover {
+	transform: scale(1.05);
+}
+
+.food__img {
+	width: 300px;
+	padding: 2rem;
+	border-bottom: 2px solid #f4f4f4;
+}
+
+.food__menu-title {
+	font-size: 1rem;
+}
+
+.food__info {
+	padding: 20px;
+}
+
+.food__title {
+	font-size: 1.6rem;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.food__description {
+	font-size: 1rem;
+	color: #777;
+	margin-bottom: 15px;
+}
+
+.food__price {
+	font-size: 1.3rem;
+	font-weight: 700;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.button__food {
+	padding: 10px 20px;
+	background-color: #ffd152;
+	border: none;
+	border-radius: 5px;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.button__food:hover {
+	background-color: #fbbf24;
+}
+
+/* Review */
+.reviews {
+	padding: 3rem 0;
+	background-color: #f9f9f9;
+}
+
+.reviews__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.reviews__title {
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 2rem;
+	color: #333;
+}
+
+.reviews__cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+}
+
+.review__card {
+	background-color: #fff;
+	padding: 1.5rem;
+	border-radius: 8px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.review__avatar {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 1rem;
+}
+
+.review__text {
+	font-size: 1rem;
+	color: #555;
+	margin-bottom: 1rem;
+}
+
+.review__author {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #111;
+}
+
+.review__date {
+	font-size: 1rem;
+	color: #888;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+	.reviews__cards {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Footer */
+
+.footer {
+	background-color: #ffffff;
+	color: #574c4f;
+	padding: 1rem 0;
+	text-align: center;
+	font-size: 0.9rem;
+}
+
+.footer__container {
+	display: flex;
+	max-width: 900px;
+	margin: 0 auto;
+	align-items: center;
+}
+
+.footer__links {
+	display: flex;
+	gap: 1rem;
+	margin: 0 auto;
+}
+
+.footer__links a:hover {
+	color: #2c2a2b;
+}
+
+.footer__info {
+	margin: 0 auto;
+}
+
+.footer__info:hover {
+	color: #2c2a2b;
+}
